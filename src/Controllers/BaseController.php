@@ -27,6 +27,7 @@ class BaseController extends Controller
 
     public function test()
     {
-
+//        $this->exam_app->util;
+        return [ "msg" => "success to use exam controller" ];
     }
 }

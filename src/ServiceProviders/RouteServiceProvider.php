@@ -20,6 +20,7 @@ class RouteServiceProvider extends LaravelRouteServiceProvider
             'namespace' => 'XYfunc\LaravelExam\Controllers'
         ], function (Router $router) {
 //            $router->post(config('exam.serve_url'), 'EasyWeChatController@openPlatformServe');
+            $router->get(config('exam.serve_url'), 'BaseController@test');
         });
     }
 
