@@ -40,7 +40,7 @@ class Application extends Container
     private function registerProviders()
     {
         foreach ($this->providers as $provider) {
-            $this->register(new $provider());
+            $this->register(new $provider($this));
         }
     }
 

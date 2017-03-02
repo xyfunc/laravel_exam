@@ -8,12 +8,12 @@
  */
 namespace XYfunc\LaravelExam;
 
-use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
 use Illuminate\Foundation\Application as LaravelApplication;
 use XYfunc\LaravelExam\Application as ExamApplication;
 use XYfunc\LaravelExam\ServiceProviders\RouteServiceProvider;
 
-class ExamProvider extends ServiceProvider
+class ServiceProvider extends LaravelServiceProvider
 {
     public function boot()
     {
