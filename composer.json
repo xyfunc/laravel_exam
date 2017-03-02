@@ -6,5 +6,8 @@
             "email": "xyfunc@163.com"
         }
     ],
+    "psr-4": {
+        " XYfunc\\LaravelExam\\": "src/"
+    },
     "require": {}
 }
