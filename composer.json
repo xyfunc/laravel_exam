@@ -1,0 +1,10 @@
+{
+    "name": "xyfunc/laravel_exam",
+    "authors": [
+        {
+            "name": "xyfunc",
+            "email": "xyfunc@163.com"
+        }
+    ],
+    "require": {}
+}
