@@ -7,9 +7,11 @@
         }
     ],
     "psr-4": {
-        "XYfunc\\LaravelExam\\": "src/"
+        "XYfunc\\LaravelExam\\": "src/",
+        "XYfunc\\LaravelExam\\Util": "src/Util/"
     },
     "require": {
-
+        "php": ">=5.4.0",
+        "illuminate/support": "~5.0"
     }
 }
