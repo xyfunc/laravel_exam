@@ -7,8 +7,7 @@
         }
     ],
     "psr-4": {
-        " XYfunc\\LaravelExam\\": "src/",
-        " XYfunc\\LaravelExam\\Util\\": "src/Util/"
+        "XYfunc\\LaravelExam\\": "src/"
     },
     "require": {
 
