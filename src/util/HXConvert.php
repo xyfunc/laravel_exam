@@ -6,7 +6,7 @@
  * Date: 17/3/2
  * Time: 16:19
  */
-namespace XYfunc\util;
+namespace XYfunc\LaravelExam\Util;
 
 class HXConvert
 {
