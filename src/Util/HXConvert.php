@@ -14,13 +14,24 @@ class HXConvert
      * @param $number integer
      * @param $list
      */
-    public static function tenToBit( $number, &$list)
+    private static function tenToBitArray( $number, &$list)
     {
         if( $number >= 1){
             array_unshift( $list, $number % 2);
-            self::tenToBit( $number / 2, $list);
+            self::tenToBitArray( $number / 2, $list);
         }else{
             return;
         }
+    }
+
+    /**
+     * @param $number integer
+     * @return string
+     */
+    public static function tenToBit( $number )
+    {
+        $list = [];
+        self::tenToBitArray( $number, $list);
+        return join('', $list);
     }
 }
