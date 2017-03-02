@@ -18,7 +18,7 @@ class HXConvert
     {
         if( $number >= 1){
             array_unshift( $list, $number % 2);
-            self::tenToBit( $number, $list);
+            self::tenToBit( $number / 2, $list);
         }else{
             return;
         }
