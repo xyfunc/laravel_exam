@@ -6,9 +6,10 @@
             "email": "xyfunc@163.com"
         }
     ],
-    "psr-4": {
-        "XYfunc\\LaravelExam\\": "src/",
-        "XYfunc\\LaravelExam\\Util": "src/Util/"
+    "autoload": {
+        "psr-4": {
+            "XYfunc\\LaravelExam\\": "src/"
+        }
     },
     "require": {
         "php": ">=5.4.0",
