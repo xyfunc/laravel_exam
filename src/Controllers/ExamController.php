@@ -17,7 +17,10 @@ class ExamController extends BaseController
     public function getQuestion(Request $request)
     {
         $book_id = $request->input('book_id');
-
+        $questions = $this->exam_app->question->getExamQuestionByBookId($book_id);
+        return [
+            'questions' => $questions,
+        ];
     }
 
 }

@@ -9,7 +9,6 @@
 namespace XYfunc\LaravelExam\Services;
 
 use XYfunc\LaravelExam\Models\Resource\Book;
-use XYfunc\LaravelExam\Models\Resource\Question;
 
 class QuestionService
 {
