@@ -12,6 +12,7 @@ use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
 use Illuminate\Foundation\Application as LaravelApplication;
 use XYfunc\LaravelExam\Application as ExamApplication;
 use XYfunc\LaravelExam\ServiceProviders\RouteServiceProvider;
+use XYfunc\LaravelExam\ServiceProviders\ViewServiceProvider;
 
 class ServiceProvider extends LaravelServiceProvider
 {
@@ -19,6 +20,7 @@ class ServiceProvider extends LaravelServiceProvider
     {
         $this->setupConfig();
         $this->app->register(RouteServiceProvider::class);
+        $this->app->register(ViewServiceProvider::class);
     }
 
     public function setupConfig()
