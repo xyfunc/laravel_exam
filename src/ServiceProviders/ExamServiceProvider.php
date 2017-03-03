@@ -11,6 +11,7 @@ namespace XYfunc\LaravelExam\ServiceProviders;
 
 use Illuminate\Container\Container;
 use Illuminate\Support\ServiceProvider;
+use XYfunc\LaravelExam\Services\QuestionService;
 use XYfunc\LaravelExam\Services\UtilService;
 
 class ExamServiceProvider extends ServiceProvider implements ServiceProviderInterface
@@ -20,6 +21,9 @@ class ExamServiceProvider extends ServiceProvider implements ServiceProviderInte
     {
         $container['util'] = function ( ){
             return new UtilService();
+        };
+        $container['question'] = function ( ){
+            return new QuestionService();
         };
     }
 

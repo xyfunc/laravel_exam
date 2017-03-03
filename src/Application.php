@@ -18,6 +18,7 @@ use XYfunc\LaravelExam\ServiceProviders\ServiceProviderInterface;
  * @package XYfunc\LaravelExam
  *
  * @property \XYfunc\LaravelExam\Services\UtilService           $util
+ * @property \XYfunc\LaravelExam\Services\QuestionService       $question
  */
 class Application extends Container
 {

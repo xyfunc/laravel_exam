@@ -23,7 +23,7 @@ class Book extends BaseModel
      * 考试问题
      * @return mixed
      */
-    public function examQuestions()
+    public function examquestions()
     {
         return $this->hasMany('XYfunc\LaravelExam\Models\Resource\Question', 'book_id')->where([
             'status' => 1,
