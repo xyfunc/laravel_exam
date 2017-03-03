@@ -27,6 +27,7 @@ class BaseController extends Controller
 
     public function test()
     {
-        return [ "msg" => $this->exam_app->util->toString() ];
+//        return [ "msg" => $this->exam_app->util->toString() ];
+        return view('exam::html.index');
     }
 }

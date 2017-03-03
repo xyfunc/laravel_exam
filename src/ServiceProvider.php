@@ -19,8 +19,8 @@ class ServiceProvider extends LaravelServiceProvider
     public function boot()
     {
         $this->setupConfig();
-        $this->app->register(RouteServiceProvider::class);
-        $this->app->register(ViewServiceProvider::class);
+        $this->loadViewsFrom(__DIR__.'/resources/views', 'exam');   // 引入view
+        $this->app->register(RouteServiceProvider::class);          // 注册 路由
     }
 
     public function setupConfig()
